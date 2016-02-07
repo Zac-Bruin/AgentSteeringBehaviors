@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Zac/Desktop/School Related/AI/AI_Final/AI_Final/Content/SpriteMarker.png</File>
+    <File>C:/Users/Zac/Desktop/School Related/AI/AI_Final/AI_Final/Content/Agent.png</File>
+    <File>C:/Users/Zac/Desktop/School Related/AI/AI_Final/AI_Final/Content/Candy.png</File>
+    <File>C:/Users/Zac/Desktop/School Related/AI/AI_Final/AI_Final/Content/Ghost.png</File>
+  </SourceFiles>
+</SourceFileCollection>
