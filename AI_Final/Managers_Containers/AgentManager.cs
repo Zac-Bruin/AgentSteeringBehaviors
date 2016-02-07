@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Linq;
-using System.Text;
-
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-
 
 namespace AI_Final
 {
@@ -66,35 +62,31 @@ namespace AI_Final
                 if(LeftMouseIsDown)
                 {
                     if ((a.Location - this.input.mouseDirection).Length() < SeekAndFleeProximity)
-                    {
                         ChangeAgentState(a, stateContainer.flee);
-                    }
 
                     else
                     {
-                        ChangeAgentState(a, stateContainer.wander);
+                        if (a.state is Wandering) { }
+                        else ChangeAgentState(a, stateContainer.wander);
                     }
                 }
 
                 else if(RightMouseIsDown)
                 {
                     if ((a.Location - this.input.mouseDirection).Length() < SeekAndFleeProximity)
-                    {
                         ChangeAgentState(a, stateContainer.hunt);
-                    }
 
                     else
                     {
-                        ChangeAgentState(a, stateContainer.wander);
+                        if (a.state is Wandering) { }
+                        else ChangeAgentState(a, stateContainer.wander);
                     }
                 }
 
                 else
                 {
                     if(a.state != stateContainer.wander)
-                    {
                         ChangeAgentState(a, stateContainer.wander);
-                    }
                 }
             }
 
@@ -123,22 +115,18 @@ namespace AI_Final
         private void CheckMouseInput()
         {
             if (this.input.mouse.LeftButton == ButtonState.Pressed && this.input.mouse.RightButton == ButtonState.Released)
-            {
                 this.LeftMouseIsDown = true;
-            }
 
-            if (this.input.mouse.RightButton == ButtonState.Pressed && this.input.mouse.LeftButton == ButtonState.Released)
-            {
+            else if (this.input.mouse.RightButton == ButtonState.Pressed && this.input.mouse.LeftButton == ButtonState.Released)
                 this.RightMouseIsDown = true;
-            }
 
-            if (this.input.mouse.RightButton == ButtonState.Released && this.input.mouse.LeftButton == ButtonState.Released)
+            else if (this.input.mouse.RightButton == ButtonState.Released && this.input.mouse.LeftButton == ButtonState.Released)
             {
                 this.RightMouseIsDown = false;
                 this.LeftMouseIsDown = false;
             }
 
-            if (this.input.mouse.RightButton == ButtonState.Pressed && this.input.mouse.LeftButton == ButtonState.Pressed)
+            else if (this.input.mouse.RightButton == ButtonState.Pressed && this.input.mouse.LeftButton == ButtonState.Pressed)
             {
                 this.RightMouseIsDown = false;
                 this.LeftMouseIsDown = false;

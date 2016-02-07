@@ -4,9 +4,9 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Zac/Desktop/School Related/AI/AI_Final/AI_Final/Content/SpriteMarker.png</File>
-    <File>C:/Users/Zac/Desktop/School Related/AI/AI_Final/AI_Final/Content/Agent.png</File>
-    <File>C:/Users/Zac/Desktop/School Related/AI/AI_Final/AI_Final/Content/Candy.png</File>
-    <File>C:/Users/Zac/Desktop/School Related/AI/AI_Final/AI_Final/Content/Ghost.png</File>
+    <File>C:/Users/Zac/Documents/GitHub/Games/AI_Final/AI_Final/Content/SpriteMarker.png</File>
+    <File>C:/Users/Zac/Documents/GitHub/Games/AI_Final/AI_Final/Content/Agent.png</File>
+    <File>C:/Users/Zac/Documents/GitHub/Games/AI_Final/AI_Final/Content/Candy.png</File>
+    <File>C:/Users/Zac/Documents/GitHub/Games/AI_Final/AI_Final/Content/Ghost.png</File>
   </SourceFiles>
 </SourceFileCollection>

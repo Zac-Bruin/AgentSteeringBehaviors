@@ -40,6 +40,7 @@
   <ItemGroup>
     <Compile Include="Agent.cs" />
     <Compile Include="Managers_Containers\AgentManager.cs" />
+    <Compile Include="Util\Random.cs" />
     <Compile Include="Util\InputController.cs" />
     <Compile Include="Util\InputHandler.cs" />
     <Compile Include="Managers_Containers\StateContainer.cs" />

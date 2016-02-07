@@ -17,21 +17,21 @@ namespace AI_Final
 
         bool hasChangedWander;
 
-        Random rand;
+        //Random rand;
 
         public Agent(Game game) : base(game)
         {
-            rand = new Random();
+            Utility.rand = new Random();
 
-            this.mass = rand.Next(2, 5);
+            this.mass = Utility.rand.Next(2, 5);
 
-            this.velocity = new Vector2(rand.Next(-100, 100), rand.Next(-100, 100));
+            this.velocity = new Vector2(Utility.rand.Next(-100, 100), Utility.rand.Next(-100, 100));
 
             UpRef = new Vector2(0, -1);
 
             this.maxSpeed = 300;
 
-            this.Direction = new Vector2(rand.Next(0, 100), rand.Next(0, 100));
+            this.Direction = new Vector2(Utility.rand.Next(0, 100), Utility.rand.Next(0, 100));
             this.Direction.Normalize();
         }
 
